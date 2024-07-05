@@ -15,7 +15,6 @@
         </div>
         <div class="col-md-6" v-if="homeData">
           <div class="profile-img-wrapper">
-            <!-- <img :src="homeData.profileImg" alt="Kiara Adams" class="profile-img"> -->
           </div>
         </div>
       </div>
@@ -135,7 +134,7 @@ export default {
   animation: 
     typing 3.5s steps(40, end), 
     blink-caret .75s step-end infinite;
-  font-size: 2.5rem; /* Adjust this value for larger font size */
+  font-size: 2.5rem; 
 }
 
 @keyframes typing {
@@ -156,7 +155,7 @@ export default {
   animation: 
     typing 4.5s steps(40, end), 
     blink-caret .75s step-end infinite;
-  font-size: 1.5rem; /* Adjust this value for larger font size */
+  font-size: 1.5rem;  
 }
 
 

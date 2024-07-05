@@ -60,9 +60,9 @@
   }
   .right-section {
     flex: 2;
-    background-color: ; /* Lighter background for text */
+    background-color: ; 
     padding: 20px;
-    border-left: 2px solid #333; /* Vertical line effect */
+    border-left: 2px solid #333; 
   }
   .right-section h2 {
     font-size: 2em;
