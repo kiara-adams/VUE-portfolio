@@ -19,8 +19,8 @@ import About from './components/AboutComp.vue';
 import Education from './components/EducationComp.vue';
 import Skills from './components/SkillsComp.vue';
 import Testimonials from './components/TestimonialComp.vue';
-import Projects from './components/ProjectsComp.vue';
-import Contact from './components/ContactsComp.vue';
+import Projects from './components/ProjectComp.vue';
+import Contact from './components/ContactComp.vue';
 import Footer from './components/FooterComp.vue';
 
 export default {
