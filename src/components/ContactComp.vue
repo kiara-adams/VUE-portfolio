@@ -13,10 +13,9 @@
             <div class="social-icons">
               <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
               <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
-              <!-- Add more icons as needed -->
             </div>
           </div>
-          <div class="divider"></div> <!-- Centered divider line -->
+          <div class="divider"></div> 
           <div class="contact-form" v-if="!loading">
             <form
               action="https://formspree.io/f/xwpekwlk"
@@ -44,7 +43,7 @@
   </template>
   
   <script>
-  import Spinner from '@/components/SpinnerComp.vue'; // Adjust the path based on your project structure
+  import Spinner from '@/components/SpinnerComp.vue'; 
   
   export default {
     name: 'ContactComp',
@@ -57,7 +56,7 @@
         email: '',
         message: '',
         animatedText: '',
-        loading: false // Flag to indicate loading state
+        loading: false 
       };
     },
     created() {
@@ -65,7 +64,6 @@
     },
     methods: {
       validateForm() {
-        // Validate form inputs before submission
         const namePattern = /^[A-Za-z]+$/;
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   
@@ -79,32 +77,28 @@
           return;
         }
   
-        // Set loading state before form submission
         this.loading = true;
   
-        // Simulate form submission delay (remove this in real use)
         setTimeout(() => {
           this.submitForm();
-        }, 1500); // Simulate delay of 1.5 seconds
+        }, 1500); 
       },
       submitForm() {
-        // Implement form submission logic here (e.g., using Formspree)
         console.log('Form submitted:', {
           name: this.name,
           email: this.email,
           message: this.message
         });
   
-        // Reset the form and loading state after submission
         this.name = '';
         this.email = '';
         this.message = '';
-        this.loading = false; // Turn off loading state
+        this.loading = false; 
       },
       typeWriterEffect(text) {
-        // Typewriter effect for the heading
+     
         let i = 0;
-        const speed = 50; // Speed of typing in milliseconds
+        const speed = 50; 
         const self = this;
         function typeWriter() {
           if (i < text.length) {
@@ -113,10 +107,10 @@
             setTimeout(typeWriter, speed);
           } else {
             setTimeout(() => {
-              self.animatedText = ''; // Clear text after animation completes
-              i = 0; // Reset index for repeating animation
-              typeWriter(); // Start again
-            }, 2000); // Wait 2 seconds before clearing
+              self.animatedText = ''; 
+              i = 0; 
+              typeWriter(); 
+            }, 2000); 
           }
         }
         typeWriter();
@@ -126,9 +120,9 @@
   </script>
   
   <style scoped>
-  /* Scoped styles for ContactComp.vue */
+
   .contact {
-    background-color: #010005; /* Soothing dark green background */
+    background-color: #010005; 
     color: #ddd;
     padding: 60px 0;
     text-align: center;
@@ -136,7 +130,7 @@
   
   .contact-content {
     display: flex;
-    justify-content: center; /* Center content horizontally */
+    justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
   }
@@ -159,16 +153,16 @@
   }
   
   .divider {
-    width: 2px; /* Adjust thickness of the divider line */
-    background-color: #fff; /* White divider line */
-    height: 100%; /* Full height of the content */
-    margin: 0 40px; /* Adjust spacing around the divider */
+    width: 2px; 
+    background-color: #fff; 
+    height: 100%; 
+    margin: 0 40px; 
   }
   
   .contact-form {
     max-width: 600px;
     text-align: left;
-    margin-top: 40px; /* Adjust top margin */
+    margin-top: 40px; 
   }
   
   .form-group {
@@ -179,12 +173,12 @@
     width: 100%;
     padding: 10px;
     font-size: 1rem;
-    border: none; /* Remove border */
-    border-bottom: 1px solid #555; /* Add bottom border */
-    background-color: transparent; /* Transparent background */
-    color: #ddd; /* Text color */
-    outline: none; /* Remove default input focus outline */
-    resize: vertical; /* Allow vertical resizing of textarea */
+    border: none; 
+    border-bottom: 1px solid #555; 
+    background-color: transparent; 
+    color: #ddd; 
+    outline: none; 
+    resize: vertical; 
   }
   
   .btn-primary {
@@ -202,14 +196,14 @@
   }
   
   .social-icons {
-    text-align: center; /* Center icons horizontally */
+    text-align: center; 
     margin-top: 20px;
   }
   
   .social-icons a {
     color: #ddd;
     font-size: 1.5rem;
-    margin: 0 10px; /* Adjust margin for spacing */
+    margin: 0 10px; 
     transition: color 0.3s ease;
   }
   
@@ -224,7 +218,7 @@
   }
   
   .spinner-container {
-    height: 200px; /* Adjust height to center vertically */
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;

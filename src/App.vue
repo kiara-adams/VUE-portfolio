@@ -108,5 +108,5 @@ export default {
 </script>
 
 <style>
-/* Global styles if any */
+
 </style>

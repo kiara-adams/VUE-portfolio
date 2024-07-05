@@ -138,7 +138,7 @@
     * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+    box-sizing: border-box; 
   }
   </style>
   

@@ -101,10 +101,8 @@ export default createStore({
     }
   },
   mutations: {
-    // Mutations for setting data will go here
   },
   actions: {
-    // Actions for fetching data will go here
   },
   modules: {}
 });

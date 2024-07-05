@@ -28,7 +28,6 @@
   </script>
   
   <style scoped>
-  /* Styles for Footer */
   .footer {
     background-color:#010c0f;
     color: #ddd;
